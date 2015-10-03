@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+        <!-- Intro -->
+        <section data-transition="concave">
+          <section>
+            <h1>Hello, there!</h1>
+            <em>Let's learn about Behat!</em>
+          </section>
+          <section>
+            <em>Who am I?</em>
+            <h2>Peter Sieg</h2>
+            <ul>
+              <li>Engineer at <a href="http://fourkitchens.com">Four Kitchens</a></li>
+              <li>github: <a href="https://github.com/chasingmaxwell">chasingmaxwell</a></li>
+              <li>Drupal: <a href="https://www.drupal.org/u/chasingmaxwell">chasingmaxwell</a></li>
+              <li>twitter: <a href="https://twitter.com/chasingmaxwell">@chasingmaxwell</a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>What are we doing here?</h2>
+            <ol>
+              <li class="fragment">High-level overview of Behat.</li>
+              <li class="fragment">Start using Behat in a real Drupal site!</li>
+            </ol>
+          </section>
+        </section>
+        <!-- /Intro -->
+
+        <!-- What is Behat? -->
+        <section data-transition="concave">
+          <section>
+            <h1>What is Behat?</h1>
+            <img src="images/man_bee_hat.jpg" />
+          </section>
+          <section>
+            <h2>From the horse's mouth</h2>
+            <blockquote cite="http://docs.behat.org/en/v3.0/">
+              <p>"Behat is an open source Behavior Driven Development framework for PHP 5.3+. What’s behavior driven development, you ask? It’s a way to develop software through a constant communication with stakeholders in form of examples; examples of how this software should help them, and you, to achieve your goals."</p>
+              — <cite><a href="http://docs.behat.org/en/v3.0/">docs.behat.org/en/v3.0</a></cite>
+            </blockquote>
+          </section>
+          <section>
+            <h2>In other words</h2>
+            <p>Behat is a testing framework that uses plain language to test user behavior scenarios on your site.</p>
+          </section>
+          <section>
+            <h2>How can Behat help me?</h2>
+            <ol>
+              <li class="fragment">Discover stakeholder goals and functional requirements.</li>
+              <li class="fragment">Improve the quality of your application.</li>
+              <li class="fragment">Improve the stability of your application.</li>
+              <li class="fragment">Give stakeholders confidence.</li>
+            </ol>
+          </section>
+          <section>
+            <h2>Let's see an example</h2>
+            <pre class="fragment">
+              <code class="gherkin" data-trim>
+@api
+Feature: Articles can be created and edited.
+  In order to inform users
+  As an editor
+  I need to create and edit articles on the site
+
+  Scenario: An editor can edit an article
+    Given I am logged in as a user with the editor role
+    Then I should be able to edit an Article
+
+  Scenario: An authenticated user can not edit an article
+    Given I am logged in as a user with the authenticated role
+    When I go to "/node/add/article"
+    Then the response status code should be 403
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Magic!</h2>
+            <img src="images/gob_magic.gif" />
+          </section>
+        </section>
+        <!-- /What is Behat? -->
+
+        <!-- Let's do this. -->
+        <section data-transition="concave">
+          <section>
+            <h1>How do I get started?</h1>
+          </section>
+          <section>
+            <h2>Let's do it together. <span class="fragment">Right now.</span></h2>
+          </section>
+          <section data-background="images/hold-onto-your-butts.gif">
+          </section>
+          <section>
+            <h2>Step 1: Install Behat</h2>
+            <iframe data-src="showterm/install_behat.html" width="800" height="600"></iframe>
+            <small>Much of this is lifted directly from the Drupal Extension <a href="http://behat-drupal-extension.readthedocs.org/en/3.1/localinstall.html">documentation</a>.</small>
+          </section>
+          <section>
+            <h2>Step 2: Configure Behat</h2>
+            <iframe data-src="http://showterm.io/7b5f8d42ba021511e627e#slow" width="800" height="600"></iframe>
+          </section>
+            
+        </section>
+        <!-- /Let's do this. -->
+        
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
