@@ -100,11 +100,11 @@
 @api
 Feature: Articles can be created and edited.
   In order to inform users
-  As an editor
+  As an administrator
   I need to create and edit articles on the site
 
-  Scenario: An editor can edit an article
-    Given I am logged in as a user with the editor role
+  Scenario: An administrator can edit an article
+    Given I am logged in as a user with the administrator role
     Then I should be able to edit an Article
 
   Scenario: An authenticated user can not edit an article
