@@ -304,3 +304,15 @@ body {
   .reveal .slides > section.inverted a:hover,
   .reveal .slides > section > section.inverted a:hover {
     color: #fd880b; }
+
+div.profile {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 250px;
+  width: 250px;
+  height: 250px;
+  background: #eee url("/images/me.png") 3px -2px no-repeat;
+  margin-right: 1.2em; }
+  div.profile + ul {
+    display: inline-block;
+    vertical-align: middle; }
