@@ -1,8 +1,10 @@
 # Behat Training Slides
 
-These are slides for a presentation on Behat.
+This is the source repository for a session on getting started with Behat.
 
-This project is using [reveal.js](https://github.com/hakimel/reveal.js/).
+[Show me the slides!](http://chasingmaxwell.github.io/behat-training)
+
+This project is built with [reveal.js](https://github.com/hakimel/reveal.js/).
 
 ### License
 
