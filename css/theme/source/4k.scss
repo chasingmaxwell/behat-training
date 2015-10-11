@@ -1,0 +1,59 @@
+/**
+ * 4K theme for reveal.js based on the Night theme.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2015 Peter Sieg, http://petersieg.me
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #d2d2d2;
+
+$mainFont: 'Open Sans', sans-serif;
+$mainColor: #414141;
+$invertedColor: #eee;
+$linkColor: #0c62c2;
+$linkColorHover: #3fd03f;
+$invertedLinkColor: $linkColor;
+$invertedLinkColorHover: #fd880b;
+$headingFont: 'Montserrat', Impact, sans-serif;
+$headingColor: $mainColor;
+$invertedHeadingColor: $invertedColor;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #68a2e3;
+$mainFontSize: 30px;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Overrides -----------------------------------
+.reveal .slides {
+  & > section.inverted,
+  & > section > section.inverted {
+    color: $invertedColor;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $invertedHeadingColor;
+    }
+
+    a:hover {
+      color: $invertedLinkColorHover;
+    }
+  }
+}
+// ---------------------------------------------
