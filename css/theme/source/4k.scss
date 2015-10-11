@@ -55,19 +55,29 @@ $mainFontSize: 30px;
       color: $invertedLinkColorHover;
     }
   }
+
+  pre {
+    box-shadow: none;
+  }
 }
 div.profile {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 250px;
-  width: 250px;
-  height: 250px;
-  background: #eee url('/images/me.png') 3px -2px no-repeat;
-  margin-right: 1.2em;
+  width: 700px;
+  margin: 2em auto 0;
+  overflow: hidden;
 
-  & + ul {
-    display: inline-block;
-    vertical-align: middle;
+  .profile-image {
+    float: left;
+    display: block;
+    border-radius: 250px;
+    width: 250px;
+    height: 250px;
+    background: #eee url('/images/me.png') 3px -2px no-repeat;
+    margin-right: 1.2em;
+  }
+
+  h3,
+  ul {
+    text-align: left;
   }
 }
 // ---------------------------------------------
