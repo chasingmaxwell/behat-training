@@ -308,6 +308,9 @@ body {
 .reveal .slides pre {
   box-shadow: none; }
 
+.reveal .slides blockquote {
+  background: #eee; }
+
 div.profile {
   width: 700px;
   margin: 2em auto 0;

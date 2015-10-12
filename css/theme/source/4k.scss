@@ -59,6 +59,9 @@ $mainFontSize: 30px;
   pre {
     box-shadow: none;
   }
+  blockquote {
+    background: $invertedColor;
+  }
 }
 div.profile {
   width: 700px;
