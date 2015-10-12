@@ -116,6 +116,37 @@ Feature: Articles can be created and edited.
     Then the response status code should be 403
               </code>
             </pre>
+            <aside class="notes" data-markdown>
+## Features
+
+### Tags
+- Can be applied to both features and scenarios
+- Uses
+  - Categorization
+  - Specify or exclude features and scenarios based on a tag
+  - Extensions can use tags to alter behavior by tag
+    Example: The Drupal Extension uses tags to select appropriate drivers.
+
+### Feature lines
+- Includes
+  - A short description of the feature being tested.
+  - A user story (scrum)
+
+### Scenarios
+- Includes
+  - A short description of the scenario being tested.
+  - Any number of steps.
+
+### Steps
+- Start with keywords
+- Sets up real conditions and triggers real events on your site.
+
+### Keywords
+- Given: sets up preconditions.
+- When: triggers an event/action.
+- Then: makes an assertion about the state of your application
+- And/But: parsed as the keyword that preceded it (for natural readability)
+            </aside>
           </section>
           <section>
             <h2>Magic!</h2>
