@@ -318,7 +318,7 @@ div.profile {
     border-radius: 250px;
     width: 270px;
     height: 270px;
-    background: #eee url("/images/me.png") 16px 6px no-repeat;
+    background: #eee url("../../images/me.png") 16px 6px no-repeat;
     margin-right: 1.2em; }
   div.profile h3,
   div.profile ul {
