@@ -67,6 +67,16 @@
               <li class="fragment">Start using Behat in a real Drupal site!</li>
             </ol>
           </section>
+          <section>
+            <h2>Following along?</h2>
+            <h3>Prerequisites</h3>
+            <ul>
+              <li>A functioning Drupal site</li>
+              <li>PHP 5.3.5+ with the curl, mbstring, and xml libraries installed</li>
+              <li>curl CLI command</li>
+            </ul>
+            <p>Access the slides at <a href="http://chasingmaxwell.github.io/behat-training">http://chasingmaxwell.github.io/behat-training</a>.</p>
+          </section>
         </section>
         <!-- /Intro -->
 
@@ -97,7 +107,36 @@
             </ol>
           </section>
           <section>
-            <h2>Let's see an example</h2>
+            <h2>Let's define some terms</h2>
+            <dl>
+              <dt class="fragment">Extension</dt>
+              <dd class="fragment">A class that alters or adds to functionality in Behat. Often extensions provide new contexts or integrate with other technologies (like Drupal).</dd>
+
+              <dt class="fragment">Context</dt>
+              <dd class="fragment">A class that provide new ways of interacting with your application. Primarily this means providing additional steps.</dd>
+
+              <dt class="fragment">Step</dt>
+              <dd class="fragment">Plain language patterns that magically set up preconditions, trigger events, or make assertions about your application.</dd>
+
+              <dt class="fragment">Feature</dt>
+              <dd class="fragment">A file that provides the definition of a unit of functionality and scenarios and steps to test that functionality.</dd>
+            </dl>
+          </section>
+          <section>
+            <h2>Let's define more terms</h2>
+            <dl>
+              <dt class="fragment">Scenario</dt>
+              <dd class="fragment">A collection of steps that recreate conditions and user behavior patterns.</dd>
+
+              <dt class="fragment">Keyword</dt>
+              <dd class="fragment">A specific set of words used at the beginning of step patterns for readability and to group steps into preconditions, actions, and assertions.</dd>
+
+              <dt class="fragment">Tag</dt>
+              <dd class="fragment">Categorization for features and scenarios.</dd>
+            </dl>
+          </section>
+          <section>
+            <h2>And now for an example</h2>
             <pre class="fragment">
               <code class="gherkin" data-trim>
 @api
