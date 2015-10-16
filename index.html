@@ -97,46 +97,30 @@
             <h2>In other words</h2>
             <p>Behat is a testing framework that uses plain language to test user behavior scenarios on your site.</p>
           </section>
-          <section>
-            <h2>How can Behat help me?</h2>
-            <ol>
-              <li class="fragment"><strong>Discover</strong> stakeholder goals and functional requirements.</li>
-              <li class="fragment">Improve the <strong>quality</strong> of your application.</li>
-              <li class="fragment">Increase the <strong>stability</strong> of your application.</li>
-              <li class="fragment">Give stakeholders <strong>confidence</strong>.</li>
-            </ol>
+          <section class="without-tests">
+            <h2>Developing without tests</h2>
+            <img src="images/failure.gif" />
+            <h4>It could happen to you...</h4>
+            <ul>
+              <li class="fragment">Poor understanding of a feature leads to inadequate development.</li>
+              <li class="fragment">Features built with bugs baked-in.</li>
+              <li class="fragment">The client keeps reporting functional regressions.</li>
+              <li class="fragment">The client has no confidence in you or your work.</li>
+            </ul>
+          </section>
+          <section class="with-tests">
+            <h2>Developing with tests</h2>
+            <img src="images/winning.gif" />
+            <h4>How can Behat help me?</h4>
+            <ul>
+              <li class="fragment">Discover stakeholder goals and functional requirements.</li>
+              <li class="fragment">Improve the quality of your application.</li>
+              <li class="fragment">Increase the stability of your application.</li>
+              <li class="fragment">Give stakeholders confidence.</li>
+            </ul>
           </section>
           <section>
-            <h2>Let's define some terms</h2>
-            <dl>
-              <dt class="fragment">Extension</dt>
-              <dd class="fragment">A class that alters or adds to functionality in Behat. Often extensions provide new contexts or integrate with other technologies (like Drupal).</dd>
-
-              <dt class="fragment">Context</dt>
-              <dd class="fragment">A class that provide new ways of interacting with your application. Primarily this means providing additional steps.</dd>
-
-              <dt class="fragment">Step</dt>
-              <dd class="fragment">Plain language patterns that magically set up preconditions, trigger events, or make assertions about your application.</dd>
-
-              <dt class="fragment">Feature</dt>
-              <dd class="fragment">A file that represents a unit of functionality and includes definition, scenarios, and steps to facilitate testing that functionality.</dd>
-            </dl>
-          </section>
-          <section>
-            <h2>Let's define more terms</h2>
-            <dl>
-              <dt class="fragment">Scenario</dt>
-              <dd class="fragment">A collection of steps that recreate conditions and user behavior patterns.</dd>
-
-              <dt class="fragment">Keyword</dt>
-              <dd class="fragment">A specific set of words used at the beginning of step patterns for readability and to group steps into preconditions, actions, and assertions.</dd>
-
-              <dt class="fragment">Tag</dt>
-              <dd class="fragment">Categorization for features and scenarios.</dd>
-            </dl>
-          </section>
-          <section>
-            <h2>And now for an example</h2>
+            <h2>How about an example?</h2>
             <pre class="fragment">
               <code class="gherkin" data-trim>
 @api
@@ -155,6 +139,62 @@ Feature: Articles can be created and edited.
     Then the response status code should be 403
               </code>
             </pre>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Step</dt>
+                  <dd>Plain language patterns that magically set up preconditions, trigger events, or make assertions about your application.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Keyword</dt>
+                  <dd>A specific set of words used at the beginning of step patterns for readability and to group steps into preconditions, actions, and assertions.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Scenario</dt>
+                  <dd>A collection of steps that recreate conditions and user behavior patterns.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Feature</dt>
+                  <dd>A file that represents a unit of functionality and includes definition, scenarios, and steps to facilitate testing that functionality.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Tag</dt>
+                  <dd>Categorization for features and scenarios.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Context</dt>
+                  <dd>A class that provide new ways of interacting with your application. Primarily this means providing additional steps.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Extension</dt>
+                  <dd>A class that alters or adds functionality to Behat. Often extensions provide new contexts or integrate with other technologies (like Drupal).</dd>
+                </dl>
+              </div>
+            </div>
             <aside class="notes" data-markdown>
 ## Features
 

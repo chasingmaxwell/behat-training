@@ -311,6 +311,15 @@ body {
 .reveal .slides blockquote {
   background: #eee; }
 
+.reveal .slides .without-tests img,
+.reveal .slides .with-tests img {
+  float: left;
+  margin: 0 2em 2em 0; }
+
+.reveal .slides .without-tests ul,
+.reveal .slides .with-tests ul {
+  display: block; }
+
 div.profile {
   width: 700px;
   margin: 2em auto 0;
@@ -326,3 +335,7 @@ div.profile {
   div.profile h3,
   div.profile ul {
     text-align: left; }
+
+.in-place {
+  position: absolute;
+  bottom: -100px; }

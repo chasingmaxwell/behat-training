@@ -62,6 +62,17 @@ $mainFontSize: 30px;
   blockquote {
     background: $invertedColor;
   }
+
+  .without-tests,
+  .with-tests {
+    img {
+      float: left;
+      margin: 0 2em 2em 0;
+    }
+    ul {
+      display: block;
+    }
+  }
 }
 div.profile {
   width: 700px;
@@ -82,5 +93,9 @@ div.profile {
   ul {
     text-align: left;
   }
+}
+.in-place {
+  position: absolute;
+  bottom: -100px;
 }
 // ---------------------------------------------
