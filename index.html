@@ -142,16 +142,8 @@ Feature: Articles can be created and edited.
             <div class="fragment fade-in in-place">
               <div class="fragment fade-out">
                 <dl>
-                  <dt>Step</dt>
-                  <dd>Plain language patterns that magically set up preconditions, trigger events, or make assertions about your application.</dd>
-                </dl>
-              </div>
-            </div>
-            <div class="fragment fade-in in-place">
-              <div class="fragment fade-out">
-                <dl>
-                  <dt>Keyword</dt>
-                  <dd>A specific set of words used at the beginning of step patterns for readability and to group steps into preconditions, actions, and assertions.</dd>
+                  <dt>Feature</dt>
+                  <dd>A file that represents a unit of functionality and includes definition, scenarios, and steps to facilitate testing that functionality.</dd>
                 </dl>
               </div>
             </div>
@@ -166,8 +158,16 @@ Feature: Articles can be created and edited.
             <div class="fragment fade-in in-place">
               <div class="fragment fade-out">
                 <dl>
-                  <dt>Feature</dt>
-                  <dd>A file that represents a unit of functionality and includes definition, scenarios, and steps to facilitate testing that functionality.</dd>
+                  <dt>Step</dt>
+                  <dd>Plain language patterns that magically set up preconditions, trigger events, or make assertions about your application.</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="fragment fade-in in-place">
+              <div class="fragment fade-out">
+                <dl>
+                  <dt>Keyword</dt>
+                  <dd>A specific set of words used at the beginning of step patterns for readability and to group steps into preconditions, actions, and assertions.</dd>
                 </dl>
               </div>
             </div>
@@ -196,35 +196,12 @@ Feature: Articles can be created and edited.
               </div>
             </div>
             <aside class="notes" data-markdown>
-## Features
+## Extensions:
 
-### Tags
-- Can be applied to both features and scenarios
-- Uses
-  - Categorization
-  - Specify or exclude features and scenarios based on a tag
-  - Extensions can use tags to alter behavior by tag
-    Example: The Drupal Extension uses tags to select appropriate drivers.
-
-### Feature lines
-- Includes
-  - A short description of the feature being tested.
-  - A user story (scrum)
-
-### Scenarios
-- Includes
-  - A short description of the scenario being tested.
-  - Any number of steps.
-
-### Steps
-- Start with keywords
-- Sets up real conditions and triggers real events on your site.
-
-### Keywords
-- Given: sets up preconditions.
-- When: triggers an event/action.
-- Then: makes an assertion about the state of your application
-- And/But: parsed as the keyword that preceded it (for natural readability)
+- Mink: browser emulator
+- Selenium: real browser automation
+- Goutte: A web crawling and screen scraping library for PHP
+- Blackbox: Drupal integration that does not assume privileged access.
             </aside>
           </section>
           <section>
@@ -281,16 +258,15 @@ Feature: Articles can be created and edited.
             <iframe data-src="showterm/custom_steps.html" width="800" height="500"></iframe>
           </section>
           <section>
-            <h2>Test JavaScript interaction</h2>
-            <iframe data-src="showterm/javascript.html" width="800" height="500"></iframe>
-          </section>
-          <section>
             <h2>Debug</h2>
-            <iframe data-src="showterm/debugging.html" width="800" height="500"></iframe>
+            <iframe data-src="showterm/debug.html" width="800" height="500"></iframe>
           </section>
           <section>
-            <h2>Set up continuous integration</h2>
-            <iframe data-src="showterm/continous_integration.html" width="800" height="500"></iframe>
+            <h2>Other things we didn't have time for:</h2>
+            <ul>
+              <li>Testing JavaScript interaction in the browser.</li>
+              <li>Using continuous integration services to automate behat tests.</li>
+            </ul>
           </section>
         </section>
         <!-- /Next Level. -->
