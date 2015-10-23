@@ -293,6 +293,8 @@ body {
 .reveal .slides {
   /** This prevents the showterm iframe from jumping. */
   overflow: hidden; }
+  .reveal .slides > section > section {
+    position: fixed; }
   .reveal .slides > section.inverted,
   .reveal .slides > section > section.inverted {
     color: #eee; }
