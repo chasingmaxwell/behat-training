@@ -290,35 +290,34 @@ body {
 .reveal .slide-number {
   color: #0c62c2; }
 
-.reveal .slides > section.inverted,
-.reveal .slides > section > section.inverted {
-  color: #eee; }
-  .reveal .slides > section.inverted h1, .reveal .slides > section.inverted h2, .reveal .slides > section.inverted h3, .reveal .slides > section.inverted h4, .reveal .slides > section.inverted h5, .reveal .slides > section.inverted h6,
-  .reveal .slides > section > section.inverted h1,
-  .reveal .slides > section > section.inverted h2,
-  .reveal .slides > section > section.inverted h3,
-  .reveal .slides > section > section.inverted h4,
-  .reveal .slides > section > section.inverted h5,
-  .reveal .slides > section > section.inverted h6 {
+.reveal .slides {
+  /** This prevents the showterm iframe from jumping. */
+  overflow: hidden; }
+  .reveal .slides > section.inverted,
+  .reveal .slides > section > section.inverted {
     color: #eee; }
-  .reveal .slides > section.inverted a:hover,
-  .reveal .slides > section > section.inverted a:hover {
-    color: #fd880b; }
-
-.reveal .slides pre {
-  box-shadow: none; }
-
-.reveal .slides blockquote {
-  background: #eee; }
-
-.reveal .slides .without-tests img,
-.reveal .slides .with-tests img {
-  float: left;
-  margin: 0 2em 2em 0; }
-
-.reveal .slides .without-tests ul,
-.reveal .slides .with-tests ul {
-  display: block; }
+    .reveal .slides > section.inverted h1, .reveal .slides > section.inverted h2, .reveal .slides > section.inverted h3, .reveal .slides > section.inverted h4, .reveal .slides > section.inverted h5, .reveal .slides > section.inverted h6,
+    .reveal .slides > section > section.inverted h1,
+    .reveal .slides > section > section.inverted h2,
+    .reveal .slides > section > section.inverted h3,
+    .reveal .slides > section > section.inverted h4,
+    .reveal .slides > section > section.inverted h5,
+    .reveal .slides > section > section.inverted h6 {
+      color: #eee; }
+    .reveal .slides > section.inverted a:hover,
+    .reveal .slides > section > section.inverted a:hover {
+      color: #fd880b; }
+  .reveal .slides pre {
+    box-shadow: none; }
+  .reveal .slides blockquote {
+    background: #eee; }
+  .reveal .slides .without-tests img,
+  .reveal .slides .with-tests img {
+    float: left;
+    margin: 0 2em 2em 0; }
+  .reveal .slides .without-tests ul,
+  .reveal .slides .with-tests ul {
+    display: block; }
 
 div.profile {
   width: 700px;

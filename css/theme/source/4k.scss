@@ -43,6 +43,9 @@ $mainFontSize: 30px;
 
 // Overrides -----------------------------------
 .reveal .slides {
+  /** This prevents the showterm iframe from jumping. */
+  overflow: hidden;
+
   & > section.inverted,
   & > section > section.inverted {
     color: $invertedColor;
