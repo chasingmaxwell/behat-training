@@ -4,6 +4,8 @@ This is the source repository for a session on getting started with Behat.
 
 [Show me the slides!](http://chasingmaxwell.github.io/behat-training)
 
+If you follow the instructions in the slides, the end result will look something like [this](https://github.com/chasingmaxwell/behat-training-boilerplate).
+
 This project is built with [reveal.js](https://github.com/hakimel/reveal.js/).
 
 ### License
