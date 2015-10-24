@@ -295,6 +295,8 @@ body {
   overflow: hidden; }
   .reveal .slides > section > section {
     position: fixed; }
+  .reveal .slides h1, .reveal .slides h2 {
+    color: #2B8A31; }
   .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4, .reveal .slides h5, .reveal .slides h6 {
     margin-top: 20px; }
   .reveal .slides > section.inverted,
