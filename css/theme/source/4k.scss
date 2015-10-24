@@ -57,6 +57,11 @@ $mainFontSize: 30px;
     margin-top: 20px;
   }
 
+  section img {
+    border: 0;
+    box-shadow: none;
+  }
+
   & > section.inverted,
   & > section > section.inverted {
     color: $invertedColor;
